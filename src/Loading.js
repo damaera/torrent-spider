@@ -8,7 +8,7 @@ const Loading = () => (
         attributeName="transform"
         attributeType="XML"
         type="rotate"
-        dur="1.5s"
+        dur="1.2s"
         from="0 50 50"
         to="360 50 50"
         repeatCount="indefinite" />
@@ -18,7 +18,7 @@ const Loading = () => (
         attributeName = "transform"
         attributeType = "XML"
         type = "rotate"
-        dur = "1s"
+        dur = ".8s"
         from = "0 50 50"
         to = "-360 50 50"
         repeatCount = "indefinite" />
