@@ -10,10 +10,14 @@ class App extends Component {
     providers: [],
     search: '',
     inputSearch: '',
+    random: 0,
   }
 
   componentDidMount () {
     this.fetchProviders()
+    setInterval(() => {
+      this.setState({ random: Math.random() })
+    }, 2000)
   }
 
   fetchTorrents = (keyword = '') => {
@@ -45,6 +49,14 @@ class App extends Component {
       })
   }
 
+  getRandomProvider = () => {
+    const { providers, random } = this.state
+    if (!providers.length) {
+      return null
+    }
+    return providers[Math.floor(random * providers.length)].name
+  }
+
   handleSearch = (e) => {
     e.preventDefault()
     this.setState({ search: this.state.inputSearch })
@@ -61,9 +73,6 @@ class App extends Component {
         <header className="header">
           <div className="wrapper">
             <h1 className="title">TorrentSpider</h1>
-            <div className="uppercase">
-              donate
-            </div>
           </div>
         </header>
         <div className="search">
@@ -111,6 +120,7 @@ class App extends Component {
                   </div>
                   <h4 className="uppercase">Please wait...</h4>
                   <div>Searching in different provider is a bit tiring...</div>
+                  <div>Scanning <b>{this.getRandomProvider()}</b></div>
                 </div>
               )
               :
