@@ -11,3 +11,16 @@ Search and magnet torrents from multiples providers
 - Torrentz2
 - 1337x
 - ExtraTorrent
+
+
+## Install
+
+`yarn install`
+
+## Running development server
+
+`yarn dev`
+
+## Build
+
+`yarn build`
