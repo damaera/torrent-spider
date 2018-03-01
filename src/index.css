@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #444;
+  background: #f6f6f6;
+}
+
+input {
+  font: inherit;
+  font-size: .9em;
+  padding: 16px;
+  outline: none;
+  border: none;
+  background: #eee;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.shadow {
+  box-shadow: 0 3px 16px rgba(0,0,0,0.05);
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: 900;
+  font-size: .9em;
+}
+
+.wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app {
+  
+}
+
+.header {
+  padding: 20px 0;
+  /* background: #fff; */
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.info div{
+  font-size: .95em;
+  opacity: .7;
+  margin-bottom: 5px;
+}
+
+.search {
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+.search .wrapper {
+  display: flex;
+}
+
+.search .input {
+  flex: 3;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+  background: #fff;
+}
+.search .btn {
+  flex: 1;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);;
+  color: #fff;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card {
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: .9em;
+}
+
+.card .title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.card .time-provider {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  opacity: .7;
+}
+
+.card .provider {
+  
+}
+
+.card .time {
+  font-style: italic;
+  font-size: .8em;
+}
+
+.card .btn {
+  font-size: .8em;
+  padding: 8px 10px;
+  border-radius: 3px;
+  color: #999;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.card .magnet {
+  /* background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);; */
+  /* color: #fff; */
+  color: tomato;
+  cursor: pointer;
+}
+
+.btn:first-child {
+  padding-left: 0;
+}
+
+.card .torrent {
+  cursor: pointer;
+  color: teal;
+}
+
+.loading {
+  text-align: center;
+}
+
+.loader-wrapper {
+  width: 100px;
+  height: 100px;
+  margin: 80px auto;
+}
+
+.results-info {
+  margin: 20px 0;
+}
+
+.results-info b {
+  color: tomato;
+}
